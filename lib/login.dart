@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:untitled4/signup.dart' show  signin;
 
+import 'forget.dart' show forget;
+
 class Login extends StatefulWidget {
   const Login({super.key});
 
@@ -99,6 +101,21 @@ class _LoginState extends State<Login> {
                     ),
                   ),
                 ),
+                const SizedBox(height: 25),
+                Align(
+                  alignment: Alignment.centerRight, // Places the button at the right
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => forget()),
+                      );
+                    },
+                    child: Text('Forget password'),
+                  ),
+                ),
+
+
                 const SizedBox(height: 25),
                 ElevatedButton(
                   onPressed: () => signIn(),

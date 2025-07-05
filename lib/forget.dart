@@ -2,14 +2,14 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:untitled4/wraper.dart' show Wrapper;
-class signin extends StatefulWidget {
-  const signin({super.key});
+class forget extends StatefulWidget {
+  const forget({super.key});
 
   @override
-  State<signin> createState() => _signinState();
+  State<forget> createState() => _forgetState();
 }
 
-class _signinState extends State<signin> {
+class _forgetState extends State<forget> {
   final TextEditingController email = TextEditingController();
   final TextEditingController password = TextEditingController();
   Future<void> signIn() async {
